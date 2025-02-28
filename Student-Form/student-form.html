@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="student-form.css" />
+  </head>
+  <body>
+    <h1>STUDENT FORM</h1>
+    <form id="elements">
+      <label>Name:</label>
+      <input type="text" id="Name"><br>
+      
+      <label>Age:</label>
+      <input type="number" id="Age"><br>
+      
+      <label>Gender:</label>
+      <input type="radio" name="Gender"value="Male">male
+      <input type="radio" name="Gender"value="Female">female<br>
+      
+      <label>Course:</label>
+      <select id="Course">
+      <option value="Python">Python</option>
+      <option value="CSS">CSS</option>
+      <option value="Javascript">Javascript</option>
+      </select><br>
+      
+      <label>E-mail:</label>
+      <input type="email" id="Email"><br>
+      
+      <button onclick="addItem(event)"type="submit">Save</button>
+      
+    </form>
+    <table id="tableForm">
+      <thead>
+      <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Course</td>
+        <td>Gender</td>
+        <td>E-mail</td>
+        <td>Action</td>
+      </tr>
+      </thead>
+      <tbody id="tableb">
+        <!--student data will be added here-->
+      </tbody>
+      </table>
+      
+    <script src="student-form.js"></script>
+  </body>
+</html>

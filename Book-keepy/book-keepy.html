@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BOOK KEEPY KEEP YOUR BOOKS SAFE.....</title>
+    <link rel="stylesheet" href="book-keepy.css" />
+</head>
+
+<body>
+    <div class=navbar>
+        <h1>Book Keepy</h1>
+    </div>
+    <div class="container">
+        <div class="bookcontainer">
+            <h2>Almanack Of Naval Ravikanth</h2>
+            <h5>Eric Jorgenson</h5>
+            <p>It covers two major themes: wealth and happiness—showing how to achieve financial 
+                success and a fulfilling life through clear thinking, 
+                decision-making, and leveraging technology.
+                 Naval emphasizes long-term wealth-building, 
+                 the power of reading and learning, and the importance of inner peace. </p>
+            <button onclick="finish(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="popup">
+        <h2>Add Book</h2>
+        <form class="popup-box">
+            <input placeholder="title" id="booktitle">
+            <input placeholder="author" id="bookauthor">
+            <textarea placeholder="Type your description here..." id="bookdescription"></textarea>
+        </form>
+        <button id="addBook">Add</button>
+        <button id="cancel">Cancel</button>
+    </div>
+
+    <button class="addNew">+</button>
+    <script src="book-keepy.js"></script>
+</body>
+
+</html>
